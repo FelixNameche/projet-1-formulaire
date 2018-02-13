@@ -97,12 +97,16 @@ body {
 	width: 800px;
 	grid-row: 3;
 	grid-column: 2;
-	grid-template-rows: 10% 20% 20% 40% 10%;
+	grid-template-rows: 10% 10% 10% 10% 50% 10%;
 	grid-template-columns: 10% 35% 35% 10% 10%;
 	background-color: #FFF;
 	border-radius: 10px;
 	box-shadow: 2px 4px 3px #7D7D7D;
-	margin-left: 43px;
+	margin:auto;
+}
+
+.pays {
+
 }
 
 .nom {

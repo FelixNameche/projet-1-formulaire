@@ -52,6 +52,12 @@
 
     <section class="info_client">
         <p>* Ces champs sont obligatoires.</p>
+        
+        <div class="genre">
+            <input type="radio" name="genre" value="homme" alt="Êtes-vous un homme ?">Homme<br />
+            <input type="radio" name="genre" value="femme" alt="Êtes-vous une femme ?">Femme<br />
+        </div>
+    
         <div class="nom">
             <input type="text" name="nomclient" placeholder="Nom" alt="Entrez votre nom.">*
         </div>
@@ -67,10 +73,6 @@
         <div class="tel">
             <input type="text" name="telclient" placeholder="Téléphone" alt="Entrez votre numéro de téléphone.">*
         </div>
-
-        <input type="radio" name="genre" value="homme" alt="Êtes-vous un homme ?">Homme<br />
-
-        <input type="radio" name="genre" value="femme" alt="Êtes-vous une femme ?">Femme<br />
 
         <form method="post" action="traitement.php"><label>Pays :
             <select name="pays">
