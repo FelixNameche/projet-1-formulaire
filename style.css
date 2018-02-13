@@ -92,6 +92,7 @@ body {
 .ok {
 	grid-row:4;
 	grid-column: 3;
+	padding-bottom: 10px;
 }
 .info_client {
 	display:grid;
@@ -109,9 +110,14 @@ body {
 	text-align: center;
 }
 
+.rouge {
+	color:red;
+}
+
 p {
 	grid-row:1;
 	grid-column: 2;
+	color: red;
 }
 
 .genres {
@@ -123,6 +129,7 @@ p {
 .nom {
 	grid-row: 3;
 	grid-column: 2;
+	
 }
 
 .prenom {
