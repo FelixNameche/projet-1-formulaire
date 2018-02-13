@@ -109,9 +109,14 @@ body {
 	text-align: center;
 }
 
+span {
+	color:red;
+}
+
 p {
 	grid-row:1;
 	grid-column: 2;
+	text-decoration-color: red;
 }
 
 .genres {
@@ -123,6 +128,7 @@ p {
 .nom {
 	grid-row: 3;
 	grid-column: 2;
+	
 }
 
 .prenom {
