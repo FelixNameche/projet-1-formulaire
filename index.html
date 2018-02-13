@@ -1,9 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php include('connexion.php'); ?>
     <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8"/>
     <title>Nous contacter</title>
 </head>
@@ -46,12 +47,12 @@
             <input type="checkbox" name="acces" value="acces7" alt="Autre">Autre<br />
             <textarea rows="4" cols="50" name="autre" placeholder="Quel est l'objet de votre problème ?" alt="Quel est l'objet de votre problème ?" form="usrform"></textarea><br />
         </div>
-            <div class="ok"><input type="submit" name="valider" value="OK"/>
+            <div class="ok"><input type="submit" name="valider" value="OK" />
         </div>
     </section>
 
     <section class="info_client">
-        <p>* Ces champs sont obligatoires.</p>
+        <p><span class="rouge">*</span> Ces champs sont obligatoires.</p>
         
         <div class="genres">
             <input type="radio" name="genre" value="homme" alt="Êtes-vous un homme ?">Homme
@@ -59,19 +60,19 @@
         </div>
     
         <div class="nom">
-            <input type="text" name="nomclient" placeholder="Nom" alt="Entrez votre nom.">*
+            <input type="text" name="nomclient" placeholder="Nom" alt="Entrez votre nom."><span class="rouge">*</span>
         </div>
         
         <div class="prenom">
-            <input type="text" name="prenomclient" placeholder="Prénom" alt="Entrez votre prénom.">*
+            <input type="text" name="prenomclient" placeholder="Prénom" alt="Entrez votre prénom."><span class="rouge">*</span>
         </div>
 
         <div class="mail">
-            <input type="text" name="mailclient" placeholder="Email" alt="Entrez votre adresse email.">*
+            <input type="text" name="mailclient" placeholder="Email" alt="Entrez votre adresse email."><span class="rouge">*</span>
         </div>
 
         <div class="tel">
-            <input type="text" name="telclient" placeholder="Téléphone" alt="Entrez votre numéro de téléphone.">*
+            <input type="text" name="telclient" placeholder="Téléphone" alt="Entrez votre numéro de téléphone."><span class="rouge">*</span>
         </div>
 
         <div class="pays">
