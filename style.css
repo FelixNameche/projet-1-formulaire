@@ -52,22 +52,24 @@ body {
 	border-radius: 10px;
 	background-color: #FFF;
 	margin: auto;
-	text-align: left;
 }
 
 .bouton1 {
 	grid-row: 1;
 	grid-column: 2;
+	text-align: left;
 }
 
 .bouton2 {
 	grid-row: 2;
 	grid-column: 2;
+	text-align: left;
 }
 
 .bouton3 {
 	grid-row: 3;
 	grid-column: 2;
+	text-align: left;
 }
 
 .ok {
@@ -75,25 +77,41 @@ body {
 	grid-column: 3;
 }
 .info_client {
+	display:grid;
+	height:auto;
+	width: 800px;
 	grid-row: 3;
 	grid-column: 2;
-	margin-left: 300px;
-	margin-right: 300px;
+	grid-template-rows: 10% 20% 20% 40% 10%;
+	grid-template-columns: 10% 35% 35% 10% 10%;
 	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 2px 4px 3px #7D7D7D;
+	margin-left: 43px;
 }
 
 .nom {
-
+	grid-row: 2;
+	grid-column: 2;
 }
 
 .prenom {
-
+	grid-row: 2;
+	grid-column: 3;
 }
 
 .mail {
-
+	grid-row: 3;
+	grid-column: 2;
 }
 
 .tel {
+	grid-row: 3;
+	grid-column: 3;
+}
 
+.description {
+	grid-row-start: 4;
+	grid-column-start: 2;
+	grid-column-end:3;
 }
