@@ -12,6 +12,8 @@
 }
 
 body {
+	height: auto;
+	width: auto;
 	display:grid;
 	grid-template-rows: 30% 30% 40%; 
 	grid-template-columns: 10% 80% 10%;
@@ -97,40 +99,63 @@ body {
 	width: 800px;
 	grid-row: 3;
 	grid-column: 2;
-	grid-template-rows: 10% 10% 10% 10% 50% 10%;
+	grid-template-rows: 10% 10% 10% 10% 15% 35% 10%;
 	grid-template-columns: 10% 35% 35% 10% 10%;
 	background-color: #FFF;
 	border-radius: 10px;
 	box-shadow: 2px 4px 3px #7D7D7D;
 	margin:auto;
+	padding:10px;
+	text-align: center;
 }
 
-.pays {
+p {
+	grid-row:1;
+	grid-column: 2;
+}
 
+.genres {
+	grid-row:2;
+	grid-column-start:2;
+	grid-column-end: 3;
 }
 
 .nom {
-	grid-row: 2;
+	grid-row: 3;
 	grid-column: 2;
 }
 
 .prenom {
-	grid-row: 2;
+	grid-row: 3;
 	grid-column: 3;
 }
 
 .mail {
-	grid-row: 3;
+	grid-row: 4;
 	grid-column: 2;
 }
 
 .tel {
-	grid-row: 3;
+	grid-row: 4;
 	grid-column: 3;
 }
 
+.pays {
+	grid-row:5;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin-left:140px;
+}
+
 .description {
-	grid-row-start: 4;
+	grid-row: 6;
 	grid-column-start: 2;
 	grid-column-end:3;
+	text-align: right;
+	margin-left:60px;
+}
+
+.valider {
+	grid-row: 7;
+	grid-column: 4;
 }
