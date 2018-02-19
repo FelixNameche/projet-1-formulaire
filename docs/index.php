@@ -1,3 +1,31 @@
+<?php
+
+
+
+if(isset($_POST['submit'])){
+
+    $nom=($_POST['nom']);
+    $prenom=($_POST['prenom']);
+    $sexe=($_POST['genre']);
+    $email=($_POST['email']);
+    $pays=($_POST['pays']);
+    $message=($_POST['message']);
+}
+
+//Sanitisation
+$options = array(
+    'nom' 	        => FILTER_SANITIZE_STRING,
+    'prenom' 	    => FILTER_SANITIZE_STRING,
+    'genre'        => FILTER_SANITIZE_STRING,
+    'email'		    => FILTER_VALIDATE_EMAIL,
+    'url' 		    => FILTER_SANITIZE_URL,
+    'pays'          => FILTER_SANITIZE_STRING,
+    'message' 		=> FILTER_SANITIZE_STRING);
+
+    
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,24 +83,24 @@
         <p><span class="rouge">*</span> Ces champs sont obligatoires.</p>
         
         <div class="genres">
-            <input type="radio" name="genre" value="homme" alt="Êtes-vous un homme ?">Homme
-            <input type="radio" name="genre" value="femme" alt="Êtes-vous une femme ?">Femme<span class="rouge">*</span>
+            <input type="radio" name="genre" value="homme">Homme
+            <input type="radio" name="genre" value="femme">Femme<span class="rouge">*</span>
         </div>
     
         <div class="nom">
-            <input type="text" name="nomclient" placeholder="Nom" alt="Entrez votre nom." required><span class="rouge">*</span>
+            <input type="text" name="nom" placeholder="Nom"  required><span class="rouge">*</span>
         </div>
         
         <div class="prenom">
-            <input type="text" name="prenomclient" placeholder="Prénom" alt="Entrez votre prénom." required><span class="rouge">*</span>
+            <input type="text" name="prenom" placeholder="Prénom"  required><span class="rouge">*</span>
         </div>
 
         <div class="mail">
-            <input type="email" name="mailclient" placeholder="Email" alt="Entrez votre adresse email." required><span class="rouge">*</span>
+            <input type="email" name="email" placeholder="Email"  required><span class="rouge">*</span>
         </div>
 
         <div class="tel">
-            <input type="text" name="telclient" placeholder="Téléphone" alt="Entrez votre numéro de téléphone." required><span class="rouge">*</span>
+            <input type="text" name="tel" placeholder="Téléphone" required><span class="rouge">*</span>
         </div>
 
         <div class="pays" required>
@@ -287,7 +315,7 @@
         </div>
 
         <div class="description">
-            <textarea class="area" name="description" form="usrform" placeholder="Description de votre problème" alt="Description de votre problème."></textarea>
+            <textarea class="area" name="message" form="usrform" placeholder="Description de votre problème"></textarea>
         </div>
 
         <div class="valider">

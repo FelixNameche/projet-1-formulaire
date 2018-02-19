@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('Bellota-Regular-webfont.eot');
+    src: url('Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Bellota-Regular-webfont.woff2') format('woff2'),
+         url('Bellota-Regular-webfont.woff') format('woff'),
+         url('Bellota-Regular-webfont.ttf') format('truetype'),
+         url('Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	height: auto;
+	width: auto;
+	display: grid;
+	grid-template-rows: 30% 30% 40%; 
+	grid-template-columns: 10% 80% 10%;
+	grid-gap: 20px;
+	text-align: center;
+	background-color: #15c5bd;
+	font-family: 'bellotaregular';
+}
+
+.formulaire {
+	display: grid;
+	height: auto;
+	width: 800px;
+	grid-row: 1;
+	grid-column: 2;
+	grid-template-rows: 20% 80%;
+	grid-template-columns: 80% 20%;
+	background-color: #FFF;
+	box-shadow: 2px 4px 3px #7D7D7D;
+	border-radius: 10px;
+	margin: auto;
+	
+}
+
+.titre {
+	grid-row: 1;
+	grid-column: 1;
+	text-align: right;
+	font-size: 40px;
+	padding-top: -30px;
+}
+
+.logo {
+	grid-row: 2;
+	grid-column: 1;
+	padding-bottom: 20px;
+}
+
+.lien {
+	grid-row: 2;
+	grid-column: 2;
+}
+
+.sujet {
+	display: grid;
+	height: auto;
+	width: 800px;
+	grid-row:2;
+	grid-column: 2;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 30% 30% 30% 10%;
+	box-shadow: 2px 4px 3px #7D7D7D;
+	border-radius: 10px;
+	background-color: #FFF;
+	margin: auto;
+}
+
+.bouton1 {
+	grid-row: 1;
+	grid-column: 2;
+	text-align: left;
+}
+
+.bouton2 {
+	grid-row: 2;
+	grid-column: 2;
+	text-align: left;
+}
+
+.bouton3 {
+	grid-row: 3;
+	grid-column: 2;
+	text-align: left;
+}
+
+.ok {
+	grid-row:4 ;
+	grid-column: 3;
+	padding-bottom: 10px;
+}
+.info_client {
+	display: grid;
+	height: auto;
+	width: 800px;
+	grid-row: 3;
+	grid-column: 2;
+	grid-template-rows: 10% 10% 10% 10% 15% 35% 10%;
+	grid-template-columns: 10% 35% 35% 10% 10%;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 2px 4px 3px #7D7D7D;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.rouge {
+	color:red;
+}
+
+p {
+	grid-row: 1;
+	grid-column: 2;
+	color: red;
+}
+
+.genres {
+	grid-row: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.nom {
+	grid-row: 3;
+	grid-column: 2;
+	
+}
+
+.prenom {
+	grid-row: 3;
+	grid-column: 3;
+}
+
+.mail {
+	grid-row: 4;
+	grid-column: 2;
+}
+
+.tel {
+	grid-row: 4;
+	grid-column: 3;
+}
+
+.pays {
+	grid-row:5 ;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin-left: 140px;
+}
+
+.description {
+	grid-row: 6;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	text-align: right;
+	margin-left: 60px;
+}
+
+.valider {
+	grid-row: 7;
+	grid-column: 4;
+}
+
+.area {
+	min-width: 35vw;
+	max-width: 35vw;
+	min-height: 15vh;
+	max-height: 15vh;
+}
